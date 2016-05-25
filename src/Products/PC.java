@@ -1,4 +1,4 @@
-package Product;
+package Products;
 
 public class PC {
     private String name;
