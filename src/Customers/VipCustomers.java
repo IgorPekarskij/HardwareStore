@@ -28,4 +28,8 @@ public class VipCustomers {
     public void buyProductWithDiscount(String product, int discount, int countity) {
 
     }
+
+    public void returnProduct(String product, int countity) {
+
+    }
 }
