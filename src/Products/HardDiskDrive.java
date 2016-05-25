@@ -1,4 +1,4 @@
-package Product;
+package Products;
 
 public class HardDiskDrive {
     private String firma;
