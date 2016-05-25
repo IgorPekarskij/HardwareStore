@@ -1,4 +1,4 @@
-package Product;
+package Products;
 
 public class TV {
     private String firma;
