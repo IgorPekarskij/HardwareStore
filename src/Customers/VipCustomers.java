@@ -1,20 +1,11 @@
 package Customers;
 
-public class VipCustomers {
-    private String name;
+public class VipCustomers extends Customer{
     private int discount;
 
     public VipCustomers(String name, int discount) {
-        this.name = name;
+        super(name);
         this.discount = discount;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getDiscount() {
@@ -25,11 +16,12 @@ public class VipCustomers {
         this.discount = discount;
     }
 
-    public void buyProductWithDiscount(String product, int discount, int countity) {
+    public void buyProductWithDiscount() {
 
     }
 
-    public void returnProduct(String product, int countity) {
-
+    @Override
+    public void returnProduct() {
+        super.returnProduct();
     }
 }
