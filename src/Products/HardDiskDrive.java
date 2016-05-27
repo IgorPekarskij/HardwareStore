@@ -1,22 +1,11 @@
 package Products;
 
-public class HardDiskDrive {
-    private String firma;
+public class HardDiskDrive extends Product{
     private String amountOfMemmory;
-    private String department;
 
-    public HardDiskDrive(String firma, String amountOfMemmory, String department) {
-        this.firma = firma;
+    public HardDiskDrive(String name, String department, String amountOfMemmory) {
+        super(name, department);
         this.amountOfMemmory = amountOfMemmory;
-        this.department = department;
-    }
-
-    public String getFirma() {
-        return firma;
-    }
-
-    public void setFirma(String firma) {
-        this.firma = firma;
     }
 
     public String getAmountOfMemmory() {
@@ -27,15 +16,7 @@ public class HardDiskDrive {
         this.amountOfMemmory = amountOfMemmory;
     }
 
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    public void formatHDD(){
+   public void formatHDD(){
 
     }
 
