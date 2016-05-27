@@ -1,4 +1,4 @@
-package StoreSection;
+package Bank;
 
 public class MoneyAgent {
     private String name;
