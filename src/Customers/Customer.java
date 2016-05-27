@@ -15,11 +15,11 @@ public class Customer {
         this.name = name;
     }
 
-    public void buyProduct(String product, int countity) {
+    public void buyProduct() {
 
     }
 
-    public void returnProduct(String product, int countity) {
+    public void returnProduct() {
 
     }
 
