@@ -1,22 +1,11 @@
 package Employees;
 
-public class Cashier {
-    private String name;
+public class Cashier extends Employee{
     private double experience;
-    private boolean busyness;
 
-    public Cashier(String name, double experience, boolean busyness) {
-        this.name = name;
+    public Cashier(String name, boolean busyness, double experience) {
+        super(name, busyness);
         this.experience = experience;
-        this.busyness = busyness;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public double getExperience() {
@@ -25,14 +14,6 @@ public class Cashier {
 
     public void setExperience(double experience) {
         this.experience = experience;
-    }
-
-    public boolean isBusyness() {
-        return busyness;
-    }
-
-    public void setBusyness(boolean busyness) {
-        this.busyness = busyness;
     }
 
     public void getMoney(int cuantity){
