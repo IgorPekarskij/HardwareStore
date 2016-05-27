@@ -1,5 +1,3 @@
-package Departments;
-
 public class Department {
     private String name;
     private String prodacts;
