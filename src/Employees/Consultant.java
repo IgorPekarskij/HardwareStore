@@ -1,22 +1,11 @@
 package Employees;
 
-public class Consultant {
-    private String name;
+public class Consultant extends Employee {
     private String department;
-    private boolean busyness;
 
-    public Consultant(String name, String department, boolean busyness) {
-        this.name = name;
+    public Consultant(String name, boolean busyness, String department) {
+        super(name, busyness);
         this.department = department;
-        this.busyness = busyness;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getDepartment() {
@@ -25,14 +14,6 @@ public class Consultant {
 
     public void setDepartment(String department) {
         this.department = department;
-    }
-
-    public boolean isBusyness() {
-        return busyness;
-    }
-
-    public void setBusyness(boolean busyness) {
-        this.busyness = busyness;
     }
 
     public void helpCustomer(String customer){
