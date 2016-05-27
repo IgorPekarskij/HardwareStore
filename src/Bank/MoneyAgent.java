@@ -1,22 +1,13 @@
 package Bank;
 
-public class MoneyAgent {
-    private String name;
+public class MoneyAgent extends Bank{
     private double expirience;
     private String bank;
 
     public MoneyAgent(String name, double expirience, String bank) {
-        this.name = name;
+        super(name);
         this.expirience = expirience;
         this.bank = bank;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public double getExpirience() {
