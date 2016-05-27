@@ -1,25 +1,16 @@
-public class Department {
-    private String name;
-    private String prodacts;
+public class Department extends SalesRoom {
+    private String products;
 
-    public Department(String name, String prodacts) {
-        this.name = name;
-        this.prodacts = prodacts;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public Department(String name, String products) {
+        super(name);
+        this.products = products;
     }
 
     public String getProdacts() {
-        return prodacts;
+        return products;
     }
 
     public void setProdacts(String prodacts) {
-        this.prodacts = prodacts;
+        this.products = prodacts;
     }
 }
