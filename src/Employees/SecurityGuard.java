@@ -1,18 +1,9 @@
 package Employees;
 
-public class SecurityGuard {
-    private String name;
+public class SecurityGuard extends Employee{
 
     public SecurityGuard(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        super(name);
     }
 
     public void openDoor(){
@@ -23,7 +14,7 @@ public class SecurityGuard {
 
     }
 
-    public void checkCustomer(String customer){
+    public void checkCustomer(){
 
     }
 }
