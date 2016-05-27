@@ -1,9 +1,9 @@
 package Customers;
 
-public class VipCustomers extends Customer{
+public class VipCustomer extends Customer{
     private int discount;
 
-    public VipCustomers(String name, int discount) {
+    public VipCustomer(String name, int discount) {
         super(name);
         this.discount = discount;
     }
