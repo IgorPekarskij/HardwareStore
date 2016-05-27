@@ -1,22 +1,11 @@
 package Products;
 
-public class TV {
-    private String firma;
+public class TV extends Product{
     private String model;
-    private String department;
 
-    public TV(String firma, String model, String department) {
-        this.firma = firma;
+    public TV(String name, String department, String model) {
+        super(name, department);
         this.model = model;
-        this.department = department;
-    }
-
-    public String getFirma() {
-        return firma;
-    }
-
-    public void setFirma(String firma) {
-        this.firma = firma;
     }
 
     public String getModel() {
@@ -27,20 +16,13 @@ public class TV {
         this.model = model;
     }
 
-    public String getDepartment() {
-        return department;
+    public void turnOn() {
+        super.turnOn();
     }
 
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    public void turnOnTv() {
-
-    }
-
-    public void turnOfTv() {
-
+    @Override
+    public void turnOff() {
+        super.turnOff();
     }
 
     public void showChanel(int number) {
