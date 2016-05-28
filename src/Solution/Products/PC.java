@@ -1,9 +1,13 @@
-package Products;
+package Solution.Products;
+
+import Solution.Department.Computers;
 
 public class PC extends Product {
+    private Computers computers;
 
-    public PC(String name, String department, int ram) {
-        super(name, department, ram);
+    public PC(String name, Computers computers, int ram) {
+        super(name, ram);
+        this.computers = computers;
     }
 
 
