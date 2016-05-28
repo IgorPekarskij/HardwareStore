@@ -1,16 +1,16 @@
 package Solution;
 
-import Solution.Customers.BaseCustomer;
-import Solution.Department.BaseDepartment;
 import Solution.Employees.Administrator;
+import Solution.Interfaces.CustomerInterface;
+import Solution.Interfaces.DepartmentInterface;
 
 import java.util.ArrayList;
 
 
 public class SalesRoom {
     private String name;
-    private ArrayList<BaseCustomer> baseCustomer;
-    private ArrayList<BaseDepartment> baseDepartment;
+    private ArrayList<CustomerInterface> customerList;
+    private ArrayList<DepartmentInterface> departmentList;
     private Administrator administrator;
 
 
