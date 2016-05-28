@@ -1,21 +1,17 @@
 package Solution.Customers;
 
-import Solution.SalesRoom;
+import Solution.Interfaces.CustomerInterface;
 
-public class BaseCustomer {
+public class BaseCustomer implements CustomerInterface{
     private String name;
-
-    public BaseCustomer(String name) {
-        this.name = name;
-    }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+//    public void setName(String name) {
+//        this.name = name;
+//    }
 
     public void buyProduct() {
 
