@@ -5,11 +5,6 @@ import Solution.SalesRoom;
 public class VipCustomer extends BaseCustomer {
     private int discount;
 
-    public VipCustomer(String name, int discount) {
-        super(name);
-        this.discount = discount;
-    }
-
     public int getDiscount() {
         return discount;
     }
@@ -20,14 +15,14 @@ public class VipCustomer extends BaseCustomer {
 
     @Override
     public void buyProduct() {
-        if (!chekDiscount()){
+        if (!checkDiscount()){
             buyProduct();
         } else {
             // купить со скидкой
         }
     }
 
-    boolean chekDiscount() {
+    boolean checkDiscount() {
         return discount > 0;
     }
 }
