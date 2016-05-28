@@ -1,15 +1,17 @@
 package Solution.Products;
 
-import Solution.Department.Computers;
-import Solution.Department.Department;
 import Solution.Department.Games;
 
-public class GameConsole extends Product {
-    private Games games;
+public class GameConsole extends ElectronicProduct {
+    private int ram;
 
-    public GameConsole(String name, int ram, Games games) {
-        super(name, ram);
-        this.games = games;
+
+    public int getRam() {
+        return ram;
+    }
+
+    public void setRam(int ram) {
+        this.ram = ram;
     }
 
     @Override
