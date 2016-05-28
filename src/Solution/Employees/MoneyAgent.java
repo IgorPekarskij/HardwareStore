@@ -1,10 +1,13 @@
-package Bank;
+package Solution.Employees;
 
-public class MoneyAgent extends Bank{
+import Solution.Bank.Bank;
+import Solution.Employees.Employee;
+
+public class MoneyAgent extends Employee{
     private double expirience;
-    private String bank;
+    private Bank bank;
 
-    public MoneyAgent(String name, double expirience, String bank) {
+    public MoneyAgent(String name, double expirience, Bank bank) {
         super(name);
         this.expirience = expirience;
         this.bank = bank;
@@ -18,11 +21,11 @@ public class MoneyAgent extends Bank{
         this.expirience = expirience;
     }
 
-    public String getBank() {
+    public Bank getBank() {
         return bank;
     }
 
-    public void setBank(String bank) {
+    public void setBank(Bank bank) {
         this.bank = bank;
     }
 
