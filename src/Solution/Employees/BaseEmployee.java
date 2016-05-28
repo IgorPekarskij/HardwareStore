@@ -1,8 +1,11 @@
 package Solution.Employees;
 
+import Solution.Department.BaseDepartment;
+
 public class BaseEmployee {
     private String name;
     private boolean busyness;
+    private BaseDepartment baseDepartment;
 
     public BaseEmployee(String name) {
         this.name = name;
