@@ -1,19 +1,8 @@
 package Solution.Department;
 
-import Solution.Consultant;
-import Solution.Products.Product;
-import Solution.SalesRoom;
+public class HomeElectronics extends BaseDepartment {
 
-/**
- * Created by Игорь on 28.05.2016.
- */
-public class HomeElectronics extends Department {
-
-    public HomeElectronics(String name, Product products, SalesRoom salesRoom, Consultant consultant) {
-        super(name, products, salesRoom, consultant);
-    }
-
-    public HomeElectronics(String name, Product products) {
-        super(name, products);
+    public HomeElectronics(String name) {
+        super(name);
     }
 }
