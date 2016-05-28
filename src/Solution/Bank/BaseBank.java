@@ -1,15 +1,18 @@
 package Solution.Bank;
 
-public class Bank {
+public class BaseBank {
     private String name;
     private String creditTerms;
 
-    public Bank(String name, String creditTerms) {
+    public BaseBank() {
+    }
+
+    public BaseBank(String name, String creditTerms) {
         this.name = name;
         this.creditTerms = creditTerms;
     }
 
-    public Bank(String name) {
+    public BaseBank(String name) {
         this.name = name;
     }
 
