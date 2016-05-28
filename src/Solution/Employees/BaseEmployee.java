@@ -1,10 +1,9 @@
 package Solution.Employees;
 
-import Solution.Department.BaseDepartment;
 import Solution.Interfaces.DepartmentInterface;
 import Solution.Interfaces.EmployeeInterface;
 
-public class BaseEmployee implements EmployeeInterface {
+public abstract class BaseEmployee implements EmployeeInterface {
     private String name;
     private boolean free;
     private DepartmentInterface department;
