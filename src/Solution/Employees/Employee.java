@@ -1,4 +1,4 @@
-package Employees;
+package Solution.Employees;
 
 public class Employee {
     private String name;
