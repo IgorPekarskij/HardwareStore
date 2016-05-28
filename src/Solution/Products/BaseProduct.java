@@ -4,7 +4,7 @@ import Solution.Department.BaseDepartment;
 import Solution.Interfaces.DepartmentInterface;
 import Solution.Interfaces.ProductInterface;
 
-public class BaseProduct implements ProductInterface{
+public abstract class BaseProduct implements ProductInterface{
     private String company;
     private double price;
     private boolean hasGuarantee;
