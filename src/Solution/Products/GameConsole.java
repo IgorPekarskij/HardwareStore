@@ -1,8 +1,6 @@
 package Solution.Products;
 
-import Solution.Department.Games;
-
-public class GameConsole extends ElectronicProduct {
+public class GameConsole extends ElectronicDevice {
     private int ram;
 
 
