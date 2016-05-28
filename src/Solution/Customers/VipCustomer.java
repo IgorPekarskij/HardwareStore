@@ -1,7 +1,5 @@
 package Solution.Customers;
 
-import Solution.SalesRoom;
-
 public class VipCustomer extends BaseCustomer {
     private int discount;
 
