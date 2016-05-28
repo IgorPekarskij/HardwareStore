@@ -2,15 +2,9 @@ package Solution.Products;
 
 import Solution.Department.Computers;
 
-public class HardDiskDrive extends Product{
+public class HardDiskDrive extends BaseProduct {
     private String amountOfMemmory;
-    private Computers computers;
 
-    public HardDiskDrive(String name, Computers computers, String amountOfMemmory) {
-        super(name);
-        this.amountOfMemmory = amountOfMemmory;
-        this.computers = computers;
-    }
 
     public String getAmountOfMemmory() {
         return amountOfMemmory;
