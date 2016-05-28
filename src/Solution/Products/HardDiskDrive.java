@@ -1,10 +1,7 @@
 package Solution.Products;
 
-import Solution.Department.Computers;
-
-public class HardDiskDrive extends BaseProduct {
+public class HardDiskDrive extends ElectronicDevice {
     private String amountOfMemmory;
-
 
     public String getAmountOfMemmory() {
         return amountOfMemmory;
