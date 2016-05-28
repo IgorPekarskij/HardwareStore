@@ -1,43 +1,29 @@
 package Solution.Bank;
 
-public class BaseBank {
+import Solution.Interfaces.BankInterface;
+
+public class BaseBank implements BankInterface{
     private String name;
-    private String creditTerms;
+    private String creditDescription;
 
-    public BaseBank() {
+
+    @Override
+    public void checkInfo() {
+
     }
 
-    public BaseBank(String name, String creditTerms) {
-        this.name = name;
-        this.creditTerms = creditTerms;
+    @Override
+    public void giveCredit() {
+
     }
 
-    public BaseBank(String name) {
-        this.name = name;
-    }
-
+    @Override
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    @Override
+    public String getCreditDescription() {
+        return creditDescription;
     }
-
-    public String getCreditTerms() {
-        return creditTerms;
-    }
-
-    public void setCreditTerms(String creditTerms) {
-        this.creditTerms = creditTerms;
-    }
-
-    public void giveCredit(int sum){
-
-    }
-
-    public void checkCreditStory(String customer){
-
-    }
-
 }
