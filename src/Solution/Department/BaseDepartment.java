@@ -6,7 +6,7 @@ import Solution.Interfaces.ProductInterface;
 
 import java.util.ArrayList;
 
-public class BaseDepartment implements DepartmentInterface{
+public abstract class BaseDepartment implements DepartmentInterface{
     private String name;
     private ArrayList<EmployeeInterface> employeeList; // Not implemented
     private ArrayList<ProductInterface> productList; // Not implemented
