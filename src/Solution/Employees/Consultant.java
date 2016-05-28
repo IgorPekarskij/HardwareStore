@@ -1,24 +1,24 @@
 package Solution.Employees;
 
-import Solution.Department.Department;
+import Solution.Department.BaseDepartment;
 
-public class Consultant extends Employee {
-    private Department department;
+public class Consultant extends BaseEmployee {
+    private BaseDepartment baseDepartment;
 
-    public Consultant(String name, boolean busyness, Department department) {
+    public Consultant(String name, boolean busyness, BaseDepartment baseDepartment) {
         super(name, busyness);
-        this.department = department;
+        this.baseDepartment = baseDepartment;
     }
 
-    public Department getDepartment() {
-        return department;
+    public BaseDepartment getBaseDepartment() {
+        return baseDepartment;
     }
 
-    public void setDepartment(Department department) {
-        this.department = department;
+    public void setBaseDepartment(BaseDepartment baseDepartment) {
+        this.baseDepartment = baseDepartment;
     }
 
-    public void helpCustomer(String customer){
+    public void helpCustomer(){
 
     }
 
