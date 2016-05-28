@@ -1,36 +1,34 @@
 package Solution.Employees;
 
 import Solution.Department.BaseDepartment;
+import Solution.Interfaces.DepartmentInterface;
+import Solution.Interfaces.EmployeeInterface;
 
-public class BaseEmployee {
+public class BaseEmployee implements EmployeeInterface {
     private String name;
-    private boolean busyness;
-    private BaseDepartment baseDepartment;
+    private boolean free;
+    private DepartmentInterface department;
 
-    public BaseEmployee(String name) {
-        this.name = name;
-    }
-
-    public BaseEmployee(String name, boolean busyness) {
-        this.name = name;
-        this.busyness = busyness;
-    }
-
-
-
+    @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public boolean isFree() {
+        return free;
+    }
+
+    @Override
+    public DepartmentInterface getDepartment() {
+        return department;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public boolean isBusyness() {
-        return busyness;
-    }
-
-    public void setBusyness(boolean busyness) {
-        this.busyness = busyness;
+    public void setFree(boolean free) {
+        this.free = free;
     }
 }
