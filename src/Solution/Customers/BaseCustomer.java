@@ -2,7 +2,7 @@ package Solution.Customers;
 
 import Solution.Interfaces.CustomerInterface;
 
-public class BaseCustomer implements CustomerInterface{
+public abstract class BaseCustomer implements CustomerInterface{
     private String name;
 
     public String getName() {
