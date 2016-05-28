@@ -1,23 +1,40 @@
 package Solution.Department;
 
-import Solution.Products.BaseProduct;
+import Solution.Interfaces.DepartmentInterface;
+import Solution.Interfaces.EmployeeInterface;
+import Solution.Interfaces.ProductInterface;
+
 import java.util.ArrayList;
 
-public class BaseDepartment {
+public class BaseDepartment implements DepartmentInterface{
     private String name;
-    private ArrayList<BaseProduct> baseProducts; // Not implemented
-    private ArrayList<BaseDepartment> baseDepartments; // Not implemented
+    private ArrayList<EmployeeInterface> employeeList; // Not implemented
+    private ArrayList<ProductInterface> productList; // Not implemented
 
-    public BaseDepartment(String name) {
-        this.name = name;
-    }
-
+    @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public ArrayList<EmployeeInterface> getEmployeeList() {
+        return employeeList;
+    }
+
+    @Override
+    public ArrayList<ProductInterface> getProductList() {
+        return productList;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
+    public void setEmployeeList(ArrayList<EmployeeInterface> employeeList) {
+        this.employeeList = employeeList;
+    }
+
+    public void setProductList(ArrayList<ProductInterface> productList) {
+        this.productList = productList;
+    }
 }
