@@ -4,11 +4,9 @@ import Solution.SalesRoom;
 
 public class BaseCustomer {
     private String name;
-    private SalesRoom salesRoom;
 
-    public BaseCustomer(String name, SalesRoom salesRoom) {
+    public BaseCustomer(String name) {
         this.name = name;
-        this.salesRoom = salesRoom;
     }
 
     public String getName() {
