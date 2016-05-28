@@ -2,11 +2,11 @@ package Solution.Customers;
 
 import Solution.SalesRoom;
 
-public class Customer {
+public class BaseCustomer {
     private String name;
     private SalesRoom salesRoom;
 
-    public Customer(String name, SalesRoom salesRoom) {
+    public BaseCustomer(String name, SalesRoom salesRoom) {
         this.name = name;
         this.salesRoom = salesRoom;
     }
