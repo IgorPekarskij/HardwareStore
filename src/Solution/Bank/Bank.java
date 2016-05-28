@@ -1,4 +1,4 @@
-package Bank;
+package Solution.Bank;
 
 public class Bank {
     private String name;
