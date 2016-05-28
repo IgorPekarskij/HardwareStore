@@ -2,7 +2,7 @@ package Solution.Products;
 
 import Solution.Department.HomeElectronics;
 
-public class TV extends BaseProduct {
+public class TV extends ElectronicDevice {
     private String model;
     private HomeElectronics homeElectronics;
 
