@@ -2,7 +2,7 @@ package Solution.Bank;
 
 import Solution.Interfaces.BankInterface;
 
-public class BaseBank implements BankInterface{
+public abstract class BaseBank implements BankInterface{
     private String name;
     private String creditDescription;
 
