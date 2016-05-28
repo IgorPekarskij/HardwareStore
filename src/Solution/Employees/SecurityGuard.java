@@ -1,18 +1,18 @@
 package Solution.Employees;
 
-import Solution.Customers.Customer;
+import Solution.Customers.BaseCustomer;
 import Solution.SalesRoom;
 
-public class SecurityGuard extends Employee{
-    private Customer customer;
+public class SecurityGuard extends BaseEmployee {
+    private BaseCustomer baseCustomer;
 
-    public SecurityGuard(String name, SalesRoom salesRoom, Customer customer) {
-        super(name, salesRoom);
-        this.customer = customer;
+    public SecurityGuard(String name, BaseCustomer baseCustomer) {
+        super(name);
+        this.baseCustomer = baseCustomer;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public BaseCustomer getBaseCustomer() {
+        return baseCustomer;
     }
 
     public void openDoor(){
