@@ -1,15 +1,15 @@
 package Solution.Products;
 
-public class Product {
+public class BaseProduct {
     private String name;
     private int ram;
 
-    public Product(String name) {
+    public BaseProduct(String name) {
         this.name = name;
 
     }
 
-    public Product(String name, int ram) {
+    public BaseProduct(String name, int ram) {
         this.name = name;
         this.ram = ram;
     }
