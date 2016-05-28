@@ -1,16 +1,16 @@
 package Solution.Employees;
 
-import Solution.Bank.Bank;
-import Solution.Employees.Employee;
+import Solution.Bank.BaseBank;
+import Solution.SalesRoom;
 
-public class MoneyAgent extends Employee{
+public class MoneyAgent extends BaseEmployee {
     private double expirience;
-    private Bank bank;
+    private BaseBank baseBank;
 
-    public MoneyAgent(String name, double expirience, Bank bank) {
+    public MoneyAgent(String name, double expirience, BaseBank baseBank) {
         super(name);
         this.expirience = expirience;
-        this.bank = bank;
+        this.baseBank = baseBank;
     }
 
     public double getExpirience() {
@@ -21,12 +21,12 @@ public class MoneyAgent extends Employee{
         this.expirience = expirience;
     }
 
-    public Bank getBank() {
-        return bank;
+    public BaseBank getBaseBank() {
+        return baseBank;
     }
 
-    public void setBank(Bank bank) {
-        this.bank = bank;
+    public void setBaseBank(BaseBank baseBank) {
+        this.baseBank = baseBank;
     }
 
     public void sendRequest(){
