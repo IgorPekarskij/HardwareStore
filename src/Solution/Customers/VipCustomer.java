@@ -2,7 +2,7 @@ package Solution.Customers;
 
 import Solution.SalesRoom;
 
-public class VipCustomer extends Customer{
+public class VipCustomer extends BaseCustomer {
     private int discount;
 
     public VipCustomer(String name, SalesRoom salesRoom, int discount) {
