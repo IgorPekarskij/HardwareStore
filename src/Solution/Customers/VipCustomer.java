@@ -1,10 +1,12 @@
-package Customers;
+package Solution.Customers;
+
+import Solution.SalesRoom;
 
 public class VipCustomer extends Customer{
     private int discount;
 
-    public VipCustomer(String name, int discount) {
-        super(name);
+    public VipCustomer(String name, SalesRoom salesRoom, int discount) {
+        super(name, salesRoom);
         this.discount = discount;
     }
 
