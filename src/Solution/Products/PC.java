@@ -2,24 +2,9 @@ package Solution.Products;
 
 import Solution.Department.Computers;
 
-public class PC extends Product {
+public class PC extends BaseProduct {
     private Computers computers;
-
-    public PC(String name, Computers computers, int ram) {
-        super(name, ram);
-        this.computers = computers;
-    }
-
-
-    @Override
-    public void turnOn(){
-        super.turnOn();
-    }
-
-    @Override
-    public void turnOff(){
-        super.turnOff();
-    }
+    private int ram;
 
     public void loadOperationSystem(String operationSystem) {
 
