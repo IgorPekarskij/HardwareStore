@@ -1,18 +1,16 @@
 package Solution.Employees;
 
-import Solution.Products.Product;
 import Solution.SalesRoom;
 
-public class Cashier extends Employee{
+public class Cashier extends BaseEmployee {
     private double experience;
 
 
-    public Cashier(String name, boolean busyness, double experience, SalesRoom salesRoom) {
-        super(name, busyness, salesRoom);
+    public Cashier(String name, double experience) {
+        super(name);
         this.experience = experience;
 
     }
-
 
     public double getExperience() {
         return experience;
