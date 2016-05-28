@@ -1,11 +1,15 @@
-package Products;
+package Solution.Products;
+
+import Solution.Department.HomeElectronics;
 
 public class TV extends Product{
     private String model;
+    private HomeElectronics homeElectronics;
 
-    public TV(String name, String department, String model) {
-        super(name, department);
+    public TV(String name, HomeElectronics homeElectronics, String model) {
+        super(name);
         this.model = model;
+        this.homeElectronics = homeElectronics;
     }
 
     public String getModel() {
