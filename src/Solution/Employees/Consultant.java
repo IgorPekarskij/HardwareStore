@@ -1,18 +1,20 @@
-package Employees;
+package Solution.Employees;
+
+import Solution.Department.Department;
 
 public class Consultant extends Employee {
-    private String department;
+    private Department department;
 
-    public Consultant(String name, boolean busyness, String department) {
+    public Consultant(String name, boolean busyness, Department department) {
         super(name, busyness);
         this.department = department;
     }
 
-    public String getDepartment() {
+    public Department getDepartment() {
         return department;
     }
 
-    public void setDepartment(String department) {
+    public void setDepartment(Department department) {
         this.department = department;
     }
 
