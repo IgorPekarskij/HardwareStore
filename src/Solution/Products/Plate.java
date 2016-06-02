@@ -1,5 +1,5 @@
 package Solution.Products;
 
 
-public class Plate extends BaseProduct {
+public class Plate extends AbstractProduct {
 }
