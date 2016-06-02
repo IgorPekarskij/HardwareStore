@@ -2,10 +2,16 @@ package Solution.Interfaces;
 
 
 public interface CustomerInterface {
-    void buyProduct();
+    String buyProduct(ProductInterface product, int quantity);
 
-    void returnProduct();
+    int returnProduct(ProductInterface product, int quantity);
 
     String getName();
+
+    int getCash();
+
+    void setCash(int money);
+
+    String getHistory();
 
 }
