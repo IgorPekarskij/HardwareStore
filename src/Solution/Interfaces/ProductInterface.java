@@ -1,7 +1,11 @@
 package Solution.Interfaces;
 
 public interface ProductInterface {
-    double getPrice();
+    int getPrice();
+
+    int getQuantityOfProduct();
+
+    void setQuantityOfProduct(int quantityOfProduct);
 
     boolean hasGuarantee();
 
