@@ -1,8 +1,6 @@
 package Solution.Employees;
 
-import Solution.Department.BaseDepartment;
-
-public class Consultant extends BaseEmployee {
+public class Consultant extends AbstractEmployee {
 
     public void helpCustomer(){
 

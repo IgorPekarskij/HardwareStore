@@ -1,6 +1,6 @@
 package Solution.Employees;
 
-public class Cashier extends BaseEmployee {
+public class Cashier extends AbstractEmployee {
     private double experience;
 
 

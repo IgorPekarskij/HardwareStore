@@ -1,9 +1,8 @@
 package Solution.Employees;
 
-import Solution.Bank.BaseBank;
 import Solution.Interfaces.BankInterface;
 
-public class Banker extends BaseEmployee {
+public class Banker extends AbstractEmployee {
     private double expirience;
     private BankInterface baseBank;
 

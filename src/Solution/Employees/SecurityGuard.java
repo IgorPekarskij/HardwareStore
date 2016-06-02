@@ -1,8 +1,6 @@
 package Solution.Employees;
 
-import Solution.Customers.BaseCustomer;
-
-public class SecurityGuard extends BaseEmployee {
+public class SecurityGuard extends AbstractEmployee {
 
 
     public void openDoor(){

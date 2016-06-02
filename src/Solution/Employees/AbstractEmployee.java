@@ -3,7 +3,7 @@ package Solution.Employees;
 import Solution.Interfaces.DepartmentInterface;
 import Solution.Interfaces.EmployeeInterface;
 
-public abstract class BaseEmployee implements EmployeeInterface {
+public abstract class AbstractEmployee implements EmployeeInterface {
     private String name;
     private boolean free;
     private DepartmentInterface department;
