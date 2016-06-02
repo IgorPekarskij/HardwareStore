@@ -2,9 +2,9 @@ package Solution.Interfaces;
 
 
 public interface BankInterface {
-    void checkInfo();
+    boolean checkInfo(String info);
 
-    void giveCredit();
+    int giveCredit(int amount, CustomerInterface customer, ProductInterface productList);
 
     String getName();
 
